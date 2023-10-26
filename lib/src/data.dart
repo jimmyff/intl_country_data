@@ -4098,7 +4098,7 @@ const List<IntlCountryData> countries = [
     flag: "🇲🇾",
     codeAlpha2: "MY",
     telephoneCode: "60",
-    telephoneMinLength: 10,
+    telephoneMinLength: 9,
     telephoneMaxLength: 11,
   ),
   IntlCountryData(
@@ -6609,8 +6609,8 @@ const List<IntlCountryData> countries = [
     flag: "🇸🇾",
     codeAlpha2: "SY",
     telephoneCode: "963",
-    telephoneMinLength: 10,
-    telephoneMaxLength: 10,
+    telephoneMinLength: 9,
+    telephoneMaxLength: 9,
   ),
   IntlCountryData(
     name: "Taiwan",
