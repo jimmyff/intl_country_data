@@ -40,6 +40,9 @@ class IntlCountryData {
   factory IntlCountryData.fromCountryCodeAlpha2(String code) =>
       countries.firstWhere((c) => c.codeAlpha2 == code.toUpperCase());
 
+  static bool hasCountryCodeAlpha2(String code) =>
+      countries.where((c) => c.codeAlpha2 == code.toUpperCase()).isNotEmpty;
+
   /// Returns all countries
   static List<IntlCountryData> all() => countries;
 
