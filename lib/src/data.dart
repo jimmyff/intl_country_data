@@ -1188,36 +1188,56 @@ const List<IntlCountryData> countries = [
     telephoneMaxLength: 9,
   ),
   IntlCountryData(
-    name: "Canada",
-    nameTranslations: {
-      "sk": "Kanada",
-      "se": "Kanáda",
-      "pl": "Kanada",
-      "no": "Canada",
-      "ja": "カナダ",
-      "it": "Canada",
-      "zh": "加拿大",
-      "nl": "Canada",
-      "de": "Kanada",
-      "fr": "Canada",
-      "es": "Canadá",
-      "en": "Canada",
-      "pt_BR": "Canadá",
-      "sr-Cyrl": "Канада",
-      "sr-Latn": "Kanada",
-      "zh_TW": "加拿大",
-      "tr": "Kanada",
-      "ro": "Canada",
-      "ar": "كندا",
-      "fa": "کانادا",
-      "yue": "加拿大"
-    },
-    flag: "🇨🇦",
-    codeAlpha2: "CA",
-    telephoneCode: "1",
-    telephoneMinLength: 10,
-    telephoneMaxLength: 10,
-  ),
+      name: "Canada",
+      nameTranslations: {
+        "sk": "Kanada",
+        "se": "Kanáda",
+        "pl": "Kanada",
+        "no": "Canada",
+        "ja": "カナダ",
+        "it": "Canada",
+        "zh": "加拿大",
+        "nl": "Canada",
+        "de": "Kanada",
+        "fr": "Canada",
+        "es": "Canadá",
+        "en": "Canada",
+        "pt_BR": "Canadá",
+        "sr-Cyrl": "Канада",
+        "sr-Latn": "Kanada",
+        "zh_TW": "加拿大",
+        "tr": "Kanada",
+        "ro": "Canada",
+        "ar": "كندا",
+        "fa": "کانادا",
+        "yue": "加拿大"
+      },
+      flag: "🇨🇦",
+      codeAlpha2: "CA",
+      telephoneCode: "1",
+      telephoneMinLength: 10,
+      telephoneMaxLength: 10,
+      telephoneAreaCodes: {
+        "Alberta": [403, 587, 780, 825, 368],
+        "British Columbia": [236, 604, 672, 250, 778],
+        "Manitoba": [204, 431, 584],
+        "New Brunswick": [506],
+        "Newfoundland": [709],
+        "Northwest Territories": [867],
+        "Nova Scotia": [782, 902],
+        "Nunavut": [867],
+        "Ontario": [
+          226, 437, 548, 647, 905, 289, // fmt
+          365, 416, 742, 249, 613, 683, 753, 807, 343, 519, 705
+        ],
+        "Prince Edward Island": [902, 782],
+        "Quebec": [
+          263, 354, 438, 579, 367, 418, // fmt
+          450, 514, 581, 873, 468, 819
+        ],
+        "Saskatchewan": [474, 306, 639],
+        "Yukon": [867],
+      }),
   IntlCountryData(
     name: "Cayman Islands",
     nameTranslations: {
@@ -7171,36 +7191,128 @@ const List<IntlCountryData> countries = [
     telephoneMaxLength: 10,
   ),
   IntlCountryData(
-    name: "United States",
-    nameTranslations: {
-      "sk": "Spojené štáty",
-      "se": "Amerihká ovttastuvvan stáhtat",
-      "pl": "Stany Zjednoczone",
-      "no": "USA",
-      "ja": "アメリカ合衆国",
-      "it": "Stati Uniti",
-      "zh": "美国",
-      "nl": "Verenigde Staten",
-      "de": "Vereinigte Staaten",
-      "fr": "États-Unis",
-      "es": "Estados Unidos",
-      "en": "United States",
-      "pt_BR": "Estados Unidos",
-      "sr-Cyrl": "Сједињене Америчке Државе",
-      "sr-Latn": "Sjedinjene Američke Države",
-      "zh_TW": "美國",
-      "tr": "Amerika Birleşik Devletleri",
-      "ro": "Statele Unite ale Americii",
-      "ar": "الولايات المتحدة",
-      "fa": "ایالات متحده آمریکا",
-      "yue": "美利堅郃眾囯"
-    },
-    flag: "🇺🇸",
-    codeAlpha2: "US",
-    telephoneCode: "1",
-    telephoneMinLength: 10,
-    telephoneMaxLength: 10,
-  ),
+      name: "United States",
+      nameTranslations: {
+        "sk": "Spojené štáty",
+        "se": "Amerihká ovttastuvvan stáhtat",
+        "pl": "Stany Zjednoczone",
+        "no": "USA",
+        "ja": "アメリカ合衆国",
+        "it": "Stati Uniti",
+        "zh": "美国",
+        "nl": "Verenigde Staten",
+        "de": "Vereinigte Staaten",
+        "fr": "États-Unis",
+        "es": "Estados Unidos",
+        "en": "United States",
+        "pt_BR": "Estados Unidos",
+        "sr-Cyrl": "Сједињене Америчке Државе",
+        "sr-Latn": "Sjedinjene Američke Države",
+        "zh_TW": "美國",
+        "tr": "Amerika Birleşik Devletleri",
+        "ro": "Statele Unite ale Americii",
+        "ar": "الولايات المتحدة",
+        "fa": "ایالات متحده آمریکا",
+        "yue": "美利堅郃眾囯"
+      },
+      flag: "🇺🇸",
+      codeAlpha2: "US",
+      telephoneCode: "1",
+      telephoneMinLength: 10,
+      telephoneMaxLength: 10,
+      telephoneAreaCodes: {
+        "Alabama": [205, 251, 256, 334, 659, 938],
+        "Alaska": [907],
+        "Arizona": [480, 520, 602, 623, 928],
+        "Arkansas": [479, 501, 870],
+        "California": [
+          209, 213, 279, 310, 323, 341, 350, 408, 415, // fmt
+          424, 442, 510, 530, 559, 562, 619, 626, 628, 650, 657, 661, 669, 707,
+          714, 747, 760, 805, 818, 820, 831, 840, 858, 909, 916, 925, 949, 951
+        ],
+        "Colorado": [303, 719, 720, 970, 983],
+        "Connecticut": [203, 475, 860, 959],
+        "Delaware": [302],
+        "Florida": [
+          239, 305, 321, 352, 386, 407, 448, 561, 656, 689, // fmt
+          727, 754, 772, 786, 813, 850, 863, 904, 941, 954
+        ],
+        "Georgia": [229, 404, 470, 478, 678, 706, 762, 770, 912, 943],
+        "Hawaii": [808],
+        "Idaho": [208, 986],
+        "Illinois": [
+          217, 224, 309, 312, 331, 447, 464, 618, 630, // fmt
+
+          708, 773, 779, 815, 847, 872
+        ],
+        "Indiana": [219, 260, 317, 463, 574, 765, 812, 930],
+        "Iowa": [319, 515, 563, 641, 712],
+        "Kansas": [316, 620, 785, 913],
+        "Kentucky": [270, 364, 502, 606, 859],
+        "Louisiana": [225, 318, 337, 504, 985],
+        "Maine": [207],
+        "Maryland": [240, 301, 410, 443, 667],
+        "Massachusetts": [
+          339, 351, 413, 508, 617, 774, 781, // fmt
+          857, 978
+        ],
+        "Michigan": [
+          231, 248, 269, 313, 517, 586, 616, 734, // fmt
+          810, 906, 947, 989
+        ],
+        "Minnesota": [218, 320, 507, 612, 651, 763, 952],
+        "Mississippi": [228, 601, 662, 769],
+        "Missouri": [314, 417, 557, 573, 636, 660, 816],
+        "Montana": [406],
+        "Nebraska": [308, 402, 531],
+        "Nevada": [702, 725, 775],
+        "New Hampshire": [603],
+        "New Jersey": [
+          201, 551, 609, 640, 732, 848, 856, // fmt
+          862, 908, 973
+        ],
+        "New Mexico": [505, 575],
+        "New York": [
+          212, 315, 332, 347, 363, 516, 518, // fmt
+          585, 607, 631, 646, 680, 716, 718, 838, 845, // fmt
+          914, 917, 929, 934
+        ],
+        "North Carolina": [
+          252, 336, 472, 704, 743, 828, // fmt
+          910, 919, 980, 984
+        ],
+        "North Dakota": [701],
+        "Ohio": [
+          216, 220, 234, 326, 330, 380, 419, 440, // fmt
+          513, 567, 614, 740, 937
+        ],
+        "Oklahoma": [405, 539, 572, 580, 918],
+        "Oregon": [458, 503, 541, 971],
+        "Pennsylvania": [
+          215, 223, 267, 272, 412, 445, 484, // fmt
+          570, 582, 610, 717, 724, 814, 835, 878
+        ],
+        "Rhode Island": [401],
+        "South Carolina": [803, 839, 843, 854, 864],
+        "South Dakota": [605],
+        "Tennessee": [423, 615, 629, 731, 865, 901, 931],
+        "Texas": [
+          210, 214, 254, 281, 325, 346, 361, 409, // fmt
+          430, 432, 469, 512, 682, 713, 726, 737, 806, 817, 830, 832, 903, 915,
+          936, 940, 945, 956, 972, 979
+        ],
+        "Utah": [385, 435, 801],
+        "Vermont": [802],
+        "Virginia": [
+          276, 434, 540, 571, 703, 757, 804, // fmt
+          826, 948
+        ],
+        "Washington": [206, 253, 360, 425, 509, 564],
+        "Washington, DC": [202, 771],
+        "West Virginia": [304, 681],
+        "Wisconsin": [262, 414, 534, 608, 715, 920],
+        "Wyoming": [307],
+      }),
   IntlCountryData(
     name: "Uruguay",
     nameTranslations: {

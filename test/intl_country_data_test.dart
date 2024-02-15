@@ -17,4 +17,33 @@ void main() {
       expect(gbCountry.length, equals(1));
     });
   });
+
+  group('Area Codes', () {
+    test('Test a CA number', () {
+      final countries = IntlCountryData.fromTelephoneNumber('+12361111111');
+      final country = countries.where((c) => c.codeAlpha2 == 'CA');
+      expect(countries, isNotEmpty);
+      expect(country, isNotEmpty);
+      expect(country.length, equals(1));
+    });
+    test('Test a US number and Texas area code', () {
+      final countries = IntlCountryData.fromTelephoneNumber('+13461111111');
+      final country = countries.where((c) => c.codeAlpha2 == 'US');
+      expect(countries, isNotEmpty);
+      expect(country, isNotEmpty);
+      expect(country.length, equals(1));
+      if (country.isNotEmpty) {
+        expect(country.first.matchingTelephoneAreaCode('+13461111111'),
+            equals('Texas'));
+      }
+    });
+
+    test('Test a Jamaica number', () {
+      final countries = IntlCountryData.fromTelephoneNumber('+18761111111');
+      final country = countries.where((c) => c.codeAlpha2 == 'JM');
+      expect(countries, isNotEmpty);
+      expect(country, isNotEmpty);
+      expect(country.length, equals(1));
+    });
+  });
 }
