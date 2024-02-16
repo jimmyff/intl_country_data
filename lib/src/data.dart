@@ -657,8 +657,8 @@ const List<IntlCountryData> countries = [
     flag: "🇧🇾",
     codeAlpha2: "BY",
     telephoneCode: "375",
-    telephoneMinLength: 10,
-    telephoneMaxLength: 10,
+    telephoneMinLength: 9,
+    telephoneMaxLength: 9,
   ),
   IntlCountryData(
     name: "Belgium",
@@ -4056,8 +4056,8 @@ const List<IntlCountryData> countries = [
     flag: "🇲🇬",
     codeAlpha2: "MG",
     telephoneCode: "261",
-    telephoneMinLength: 10,
-    telephoneMaxLength: 10,
+    telephoneMinLength: 9,
+    telephoneMaxLength: 9,
   ),
   IntlCountryData(
     name: "Malawi",
@@ -4707,7 +4707,7 @@ const List<IntlCountryData> countries = [
     flag: "🇳🇦",
     codeAlpha2: "NA",
     telephoneCode: "264",
-    telephoneMinLength: 10,
+    telephoneMinLength: 9,
     telephoneMaxLength: 10,
   ),
   IntlCountryData(

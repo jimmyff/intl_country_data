@@ -1,3 +1,7 @@
+## 1.2.1
+
+- Fix for Madagascar, Belarus & Namibia number validation. Tests added.
+
 ## 1.2.0
 
 - Added telephone area code data. This is currently specified for US & CA and allows correct identification of telephone country for US, CA & Caribbean countries.

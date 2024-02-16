@@ -19,14 +19,14 @@ void main() {
   });
 
   group('Area Codes', () {
-    test('Test a CA number', () {
+    test('Country Test: Canada', () {
       final countries = IntlCountryData.fromTelephoneNumber('+12361111111');
       final country = countries.where((c) => c.codeAlpha2 == 'CA');
       expect(countries, isNotEmpty);
       expect(country, isNotEmpty);
       expect(country.length, equals(1));
     });
-    test('Test a US number and Texas area code', () {
+    test('Country Test: United States', () {
       final countries = IntlCountryData.fromTelephoneNumber('+13461111111');
       final country = countries.where((c) => c.codeAlpha2 == 'US');
       expect(countries, isNotEmpty);
@@ -38,12 +38,39 @@ void main() {
       }
     });
 
-    test('Test a Jamaica number', () {
+    test('Country Test: Jamaica', () {
       final countries = IntlCountryData.fromTelephoneNumber('+18761111111');
       final country = countries.where((c) => c.codeAlpha2 == 'JM');
       expect(countries, isNotEmpty);
       expect(country, isNotEmpty);
       expect(country.length, equals(1));
+    });
+
+    test('Country Test: Namibia', () {
+      final countries = IntlCountryData.fromTelephoneNumber('+264111111111');
+      expect(countries, isNotEmpty);
+      expect(countries.length, equals(1));
+      if (countries.length == 1) {
+        expect(countries.first.codeAlpha2, equals('NA'));
+      }
+    });
+
+    test('Country Test: Belarus', () {
+      final countries = IntlCountryData.fromTelephoneNumber('+375111111111');
+      expect(countries, isNotEmpty);
+      expect(countries.length, equals(1));
+      if (countries.length == 1) {
+        expect(countries.first.codeAlpha2, equals('BY'));
+      }
+    });
+
+    test('Country Test: Madagascar', () {
+      final countries = IntlCountryData.fromTelephoneNumber('+261111111111');
+      expect(countries, isNotEmpty);
+      expect(countries.length, equals(1));
+      if (countries.length == 1) {
+        expect(countries.first.codeAlpha2, equals('MG'));
+      }
     });
   });
 }

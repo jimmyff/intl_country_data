@@ -1,6 +1,6 @@
 name: intl_country_data
 description: Dart package containing international country data.
-version: 1.2.0
+version: 1.2.1
 repository: https://github.com/jimmyff/intl_country_data
 
 environment:
