@@ -1,3 +1,8 @@
+
+## 1.2.2
+
+- Fix for Kenya
+
 ## 1.2.1
 
 - Fix for Madagascar, Belarus & Namibia number validation. Tests added.
