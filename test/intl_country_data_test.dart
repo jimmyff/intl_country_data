@@ -82,4 +82,29 @@ void main() {
       }
     });
   });
+
+  test('Country Test: New Zealand', () {
+    final countries9digit = IntlCountryData.fromTelephoneNumber('+64123456789');
+    expect(countries9digit, isNotEmpty);
+    expect(countries9digit.length, equals(1));
+    if (countries9digit.length == 1) {
+      expect(countries9digit.first.codeAlpha2, equals('NZ'));
+    }
+    final countries10digit =
+        IntlCountryData.fromTelephoneNumber('+641234567890');
+    expect(countries10digit, isNotEmpty);
+    expect(countries10digit.length, equals(1));
+    if (countries10digit.length == 1) {
+      expect(countries10digit.first.codeAlpha2, equals('NZ'));
+    }
+  });
+
+  test('Country Test: Pitcairn', () {
+    final countries = IntlCountryData.fromTelephoneNumber('+6412345678');
+    expect(countries, isNotEmpty);
+    expect(countries.length, equals(1));
+    if (countries.length == 1) {
+      expect(countries.first.codeAlpha2, equals('PN'));
+    }
+  });
 }
