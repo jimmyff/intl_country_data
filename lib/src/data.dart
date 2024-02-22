@@ -1700,8 +1700,8 @@ const List<IntlCountryData> countries = [
     flag: "🇭🇷",
     codeAlpha2: "HR",
     telephoneCode: "385",
-    telephoneMinLength: 12,
-    telephoneMaxLength: 12,
+    telephoneMinLength: 8,
+    telephoneMaxLength: 9,
   ),
   IntlCountryData(
     name: "Cuba",
