@@ -115,4 +115,12 @@ void main() {
       expect(countries.first.codeAlpha2, equals('HR'));
     }
   });
+  test('Country Test: Ghana', () {
+    final countries = IntlCountryData.fromTelephoneNumber('+233123456789');
+    expect(countries, isNotEmpty);
+    expect(countries.length, equals(1));
+    if (countries.length == 1) {
+      expect(countries.first.codeAlpha2, equals('GH'));
+    }
+  });
 }

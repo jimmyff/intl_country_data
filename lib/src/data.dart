@@ -2537,8 +2537,8 @@ const List<IntlCountryData> countries = [
     flag: "🇬🇭",
     codeAlpha2: "GH",
     telephoneCode: "233",
-    telephoneMinLength: 10,
-    telephoneMaxLength: 10,
+    telephoneMinLength: 9,
+    telephoneMaxLength: 9,
   ),
   IntlCountryData(
     name: "Gibraltar",
