@@ -2,6 +2,7 @@
 
 ## 1.2
 
+- 1.2.6: Fix for Austria & Bosnia and Herzegovina telephone number lengths. Updated tests.
 - 1.2.5: Fix for Ghana telephone number length.
 - 1.2.4: Fix for Croatia telephone number length.
 - 1.2.3: Fix for New Zealand & Pitcairn telephone number differentiation.

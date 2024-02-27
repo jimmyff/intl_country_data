@@ -471,8 +471,8 @@ const List<IntlCountryData> countries = [
     flag: "🇦🇹",
     codeAlpha2: "AT",
     telephoneCode: "43",
-    telephoneMinLength: 11,
-    telephoneMaxLength: 13,
+    telephoneMinLength: 3,
+    telephoneMaxLength: 12,
   ),
   IntlCountryData(
     name: "Azerbaijan",
@@ -874,7 +874,7 @@ const List<IntlCountryData> countries = [
     flag: "🇧🇦",
     codeAlpha2: "BA",
     telephoneCode: "387",
-    telephoneMinLength: 9,
+    telephoneMinLength: 8,
     telephoneMaxLength: 9,
   ),
   IntlCountryData(
