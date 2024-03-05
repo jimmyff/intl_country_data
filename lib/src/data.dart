@@ -3777,7 +3777,9 @@ const List<IntlCountryData> countries = [
     flag: "🇱🇧",
     codeAlpha2: "LB",
     telephoneCode: "961",
-    telephoneMinLength: 8,
+
+    // SRC https://www.itu.int/dms_pub/itu-t/oth/02/02/T02020000770003PDFE.pdf
+    telephoneMinLength: 7,
     telephoneMaxLength: 8,
   ),
   IntlCountryData(

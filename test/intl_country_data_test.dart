@@ -166,4 +166,20 @@ void main() {
       expect(countriesLong.first.codeAlpha2, equals('AT'));
     }
   });
+  test('Country Test: Lebanon', () {
+    final countriesShort =
+        IntlCountryData.fromTelephoneNumber('+961${fakeNsn(7)}');
+    expect(countriesShort, isNotEmpty);
+    expect(countriesShort.length, equals(1));
+    if (countriesShort.length == 1) {
+      expect(countriesShort.first.codeAlpha2, equals('LB'));
+    }
+    final countriesLong =
+        IntlCountryData.fromTelephoneNumber('+961${fakeNsn(8)}');
+    expect(countriesLong, isNotEmpty);
+    expect(countriesLong.length, equals(1));
+    if (countriesLong.length == 1) {
+      expect(countriesLong.first.codeAlpha2, equals('LB'));
+    }
+  });
 }

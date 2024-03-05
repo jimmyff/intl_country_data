@@ -1,6 +1,6 @@
 name: intl_country_data
 description: Dart package containing country data including international dialing codes and telephone number lengths. Other data include ISO 3166 2 letter country codes, flag emojis and country name translations. This package can be used in Dart or Flutter environments.
-version: 1.2.6
+version: 1.2.7
 repository: https://github.com/jimmyff/intl_country_data
 
 environment:
