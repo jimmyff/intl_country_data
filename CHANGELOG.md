@@ -2,6 +2,7 @@
 
 ## 1.2
 
+- 1.2.8: Fix for Indonesia's domestic telephone number length.
 - 1.2.7: Fix for Lebanon's 2021 telephone number length changes.
 - 1.2.6: Fix for Austria & Bosnia and Herzegovina telephone number lengths. Updated tests.
 - 1.2.5: Fix for Ghana telephone number length.

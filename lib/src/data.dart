@@ -3157,7 +3157,7 @@ const List<IntlCountryData> countries = [
     flag: "🇮🇩",
     codeAlpha2: "ID",
     telephoneCode: "62",
-    telephoneMinLength: 10,
+    telephoneMinLength: 7,
     telephoneMaxLength: 13,
   ),
   IntlCountryData(

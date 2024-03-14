@@ -182,4 +182,21 @@ void main() {
       expect(countriesLong.first.codeAlpha2, equals('LB'));
     }
   });
+
+  test('Country Test: Indonesia', () {
+    final countriesShort =
+        IntlCountryData.fromTelephoneNumber('+62${fakeNsn(7)}');
+    expect(countriesShort, isNotEmpty);
+    expect(countriesShort.length, equals(1));
+    if (countriesShort.length == 1) {
+      expect(countriesShort.first.codeAlpha2, equals('ID'));
+    }
+    final countriesLong =
+        IntlCountryData.fromTelephoneNumber('+62${fakeNsn(13)}');
+    expect(countriesLong, isNotEmpty);
+    expect(countriesLong.length, equals(1));
+    if (countriesLong.length == 1) {
+      expect(countriesLong.first.codeAlpha2, equals('ID'));
+    }
+  });
 }
