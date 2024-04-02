@@ -199,4 +199,21 @@ void main() {
       expect(countriesLong.first.codeAlpha2, equals('ID'));
     }
   });
+  test('Country Test: Luxembourg', () {
+    final countries = IntlCountryData.fromTelephoneNumber('+352${fakeNsn(9)}');
+    expect(countries, isNotEmpty);
+    expect(countries.length, equals(1));
+    if (countries.length == 1) {
+      expect(countries.first.codeAlpha2, equals('LU'));
+    }
+  });
+
+  test('Country Test: Finland', () {
+    final countries = IntlCountryData.fromTelephoneNumber('+358${fakeNsn(9)}');
+    expect(countries, isNotEmpty);
+    expect(countries.length, equals(1));
+    if (countries.length == 1) {
+      expect(countries.first.codeAlpha2, equals('FI'));
+    }
+  });
 }

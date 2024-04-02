@@ -2258,8 +2258,8 @@ const List<IntlCountryData> countries = [
     flag: "🇫🇮",
     codeAlpha2: "FI",
     telephoneCode: "358",
-    telephoneMinLength: 12,
-    telephoneMaxLength: 12,
+    telephoneMinLength: 7,
+    telephoneMaxLength: 14,
   ),
   IntlCountryData(
     name: "France",
@@ -3965,7 +3965,7 @@ const List<IntlCountryData> countries = [
     flag: "🇱🇺",
     codeAlpha2: "LU",
     telephoneCode: "352",
-    telephoneMinLength: 11,
+    telephoneMinLength: 5,
     telephoneMaxLength: 11,
   ),
   IntlCountryData(
